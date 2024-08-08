@@ -9,7 +9,7 @@
 }
 
 .home {
-    background-image: url('/assets/photos/devop.jpg');
+    background-image: url('../photos/devop.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
