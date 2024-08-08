@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styles/style.css" >
+        <link rel="icon" type="image/x-icon" href="/assets/photos/-x0i2cj.jpg">
+        <title>Socials</title>
+    </head>
+    <body class="about_body">
+        <main>
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <a href="/index.html">YadhuKrishnan</a>
+                    </div>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/project.html">Projects</a></li>
+                        <li><a href="#">Qualification</a></li>
+                        <li><a href="/social.html" style="color: #f39c12;">Socials</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="socials">
+                <div id="social-container" class="hidden social-container">
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>Instagram</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>Instagram</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>Instagram</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>Instagram</h3>
+                    </div>
+
+                    <div class="card">
+                        <img src="" alt="">
+                        <h3>Instagram</h3>
+                    </div>
+                    
+                </div>
+
+
+                
+                <form class="validate_form" id="validation-form" onsubmit="validateForm(event)">
+                    <div class="main_contents">
+                        <h2 class="form_heading">Hi</h2>
+                        <p class="statement">
+                            In order to protect my privacy I had to know the details who are looking for my socials. Fill the folowing form and see my socials <b>:)</b> 
+                        </p>
+                        
+                        <div class="name_input">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                        </div>
+
+                        <div class="number_input">
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone" name="phone" required><br><br>
+
+                        </div>
+
+                        <div class="email_input">
+                            <div style="margin: 0; row-gap: 20px;">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <button class="form_buttons" type="button" id="send-otp-btn" onclick="sendOtp()">Send OTP</button>
+                        </div>
+
+                        <div id="otp-section" class="hidden otp-section">
+                            <div style="margin: 0;">
+                                <label for="otp">OTP:</label>
+                                <input type="text" id="otp" name="otp" required>
+                            </div>
+                
+                            <button class="form_buttons" type="button" id="validate-otp-btn" onclick="validateOtp()">Validate OTP</button>
+                        </div>
+                        <div class="accept_statements">
+                            <input type="checkbox" id="accept-statements" name="accept-statements" required>
+                            <label for="accept-statements">I'm ready to share my details with author.</label><br><br>
+                        </div>
+                        <button type="submit" id="submit-btn" class="hidden form_submitter">Submit</button>
+                    </div>
+                </form>
+                
+            </section>
+
+
+
+        </main>
+        <script src="/assets/Scripts/index.js" defer></script>
+        <script src="/assets/Scripts/validator.js" defer></script>
+    </body>
+</html>
