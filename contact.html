@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/style.css" >
-    <link rel="icon" type="image/x-icon" href="/assets/photos/-x0i2cj.jpg">
+    <link rel="icon" type="image/x-icon" href="./assets/photos/-x0i2cj.jpg">
     <title>Contact</title>
 </head>
     <body class="about_body">
@@ -12,7 +12,7 @@
             <nav>
                 <div class="container">
                     <div class="logo">
-                        <a href="/index.html">YadhuKrishnan</a>
+                        <a href="index.html">YadhuKrishnan</a>
                     </div>
                     <button class="menu-toggle" aria-label="Toggle menu">
                         <span class="menu-icon"></span>
@@ -20,12 +20,12 @@
                         <span class="menu-icon"></span>
                     </button>
                     <ul class="nav-links">
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/project.html">Projects</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
                         <li><a href="#">Qualification</a></li>
-                        <li><a href="/social.html">Socials</a></li>
-                        <li><a href="/contact.html" style="color: #f39c12;">Write a message</a></li>
+                        <li><a href="social.html">Socials</a></li>
+                        <li><a href="contact.html" style="color: #f39c12;">Write a message</a></li>
                     </ul>
                 </div>
             </nav>
@@ -34,7 +34,7 @@
 
                 <div class="message-container">
                     <h1>Write a Message</h1>
-                    <form class="message-form" onsubmit="submit()" action="post">
+                    <form class="message-form" onsubmit="contactSubmit(event)">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -59,7 +59,7 @@
 
         </main>
 
-        <script src="/assets/Scripts/index.js" defer></script>
-        <script src="/assets/Scripts/validator.js"></script>
+        <script src="./assets/Scripts/index.js" defer></script>
+        <script src="./assets/Scripts/validator.js"></script>
     </body>
 </html>

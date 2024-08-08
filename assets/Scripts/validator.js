@@ -8,11 +8,13 @@ function isValidPhoneNumber(phoneNumber) {
     return regex.test(phoneNumber);
 }
 
-function submit(){
+function contactSubmit(event){
+    event.preventDefault(); 
     if(!document.getElementById('name').value && !document.getElementById('email').value && !document.getElementById('message').value){
         alert("please enter the Details...");
     }else{
         alert("Thankyou for sending a message");
+        location.reload(true);
     }
 }
 

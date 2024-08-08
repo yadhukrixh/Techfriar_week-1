@@ -257,6 +257,10 @@ a:hover {
 }
 
 section {
+    background-image: url('../photos/devop.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
     margin-top: 65px;
     display: flex;
     flex-direction: column;
@@ -513,7 +517,7 @@ section {
 
 /* about page */
 .about_body {
-    background-image: url('/assets/photos/devop.jpg');
+    background-image: url('../assets/photos/devop.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
