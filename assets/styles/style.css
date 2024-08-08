@@ -1130,3 +1130,20 @@ textarea {
         padding: 6px;
     }
 }
+
+
+/* Qualification page css */
+.qualifications{
+    backdrop-filter: blur(5px);
+    height: 100dvh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qualification-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
