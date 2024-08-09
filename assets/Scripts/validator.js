@@ -32,6 +32,7 @@ function sendOtp() {
             emailError.style.display = 'none';
             alert("OTP sent to email!");
             document.getElementById('otp-section').classList.remove('hidden');
+            document.getElementById('validate-otp-btn').classList.remove('hidden');
             document.getElementById('send-otp-btn').disabled = true;
 
         }
