@@ -877,7 +877,7 @@ section {
 .email_input, .otp-section {
     margin: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     row-gap: 10px;
 }
