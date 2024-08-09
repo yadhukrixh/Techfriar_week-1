@@ -78,12 +78,14 @@
                         
                         <div class="name_input">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required><br><br>
+                            <input type="text" id="name" name="name" required>
                         </div>
 
                         <div class="number_input">
                             <label for="phone">Phone:</label>
-                            <input type="text" id="phone" name="phone" required><br><br>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        <div class="number-error" id="number-error">
 
                         </div>
 
@@ -91,6 +93,9 @@
                             <div style="margin: 0; row-gap: 20px;">
                                 <label for="email">Email:</label>
                                 <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="email-error" id="email-error">
+
                             </div>
                             <button class="form_buttons" type="button" id="send-otp-btn" onclick="sendOtp()">Send OTP</button>
                         </div>
@@ -100,7 +105,9 @@
                                 <label for="otp">OTP:</label>
                                 <input type="text" id="otp" name="otp" required>
                             </div>
-                
+                            <div class="otp-error" id="otp-error">
+
+                            </div>
                             <button class="form_buttons" type="button" id="validate-otp-btn" onclick="validateOtp()">Validate OTP</button>
                         </div>
                         <div class="accept_statements">

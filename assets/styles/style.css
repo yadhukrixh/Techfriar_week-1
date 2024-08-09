@@ -901,20 +901,30 @@ input {
     padding: 3px;
     padding-left: 10px;
     height: 25px;
-    border: 1px solid black;
+    border: none;
     color: white;
-    background-color: #00000093;
+    background-color: #ad908f;
     backdrop-filter: blur(5px);
     cursor: pointer;
 }
 
 .form_buttons, .form_submitter {
+    cursor: pointer;
     width: 100px;
     height: 100%;
     padding: 10px;
     border-radius: 10px;
     border: none;
+    color: #000000;
+    font-weight: 600;
+    background-color: #1ad8bf;
     box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.form_buttons:hover{
+    background-color: #25D366;
+    color: #fff;
 }
 
 .form_submitter {
@@ -923,12 +933,18 @@ input {
     background-color: black;
     color: white;
     margin: 0;
-    transition: background-color 0.7s, color 0.7s;
 }
 
 .form_submitter:hover {
     background-color: #fff;
     color: #000;
+}
+
+.email-error,
+.otp-error,
+.number-error{
+    font-size: 10px;
+    color: red;
 }
 
 /* Media queries for responsiveness */
