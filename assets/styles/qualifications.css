@@ -1,0 +1,133 @@
+/* Qualification page css */
+.qualifications {
+    padding: 100px;
+    height: 100dvh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qualification-container {
+    animation: landreveal1 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 50px;
+    padding: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.qualification-card {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #129d5c60;
+    backdrop-filter: blur(8px);
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    transition: background-color 0.7s;
+}
+
+.qualification-card:hover {
+    background-color: #e0ccbe95;
+}
+
+.school-images {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.blur-background {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    backdrop-filter: blur(5px); /* Blurs the background */
+    z-index: 999; /* Ensure it's above other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust the width as needed */
+    text-align: center;
+    animation: reveal 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@media (max-width: 1024px) {
+    .qualification-container {
+        padding: 50px;
+        column-gap: 30px;
+    }
+
+    .qualification-card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .school-images {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .qualifications {
+        padding: 50px;
+    }
+
+    .qualification-container {
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 30px;
+    }
+
+    .qualification-card {
+        width: 220px;
+        height: 220px;
+        border-radius: 50px;
+    }
+
+    .school-images {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .qualification-container {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 20px;
+    }
+
+    .qualification-card {
+        width: 200px;
+        height: 200px;
+        border-radius: 40px;
+        font-size: 18px;
+    }
+
+    .school-images {
+        width: 100px;
+        height: 100px;
+    }
+}

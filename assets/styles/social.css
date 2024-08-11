@@ -1,0 +1,227 @@
+/* Social page style */
+/* Base styles */
+.socials {
+    display: flex;
+    height: 100vh; /* Changed from 100dvh to 100vh for more compatibility */
+    justify-content: center;
+}
+
+@keyframes open-animation{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.validate_form, .social-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 254, 254, 0.449);
+    backdrop-filter: blur(4px);
+    border: 4px solid black;
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    box-sizing: border-box;
+    border-radius: 20px;
+    animation: open-animation .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.main_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px; /* Reduced margin for smaller screens */
+}
+
+.form_heading {
+    font-size: 24px; /* Adjusted for better readability on smaller screens */
+}
+
+.statement {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 400px; /* Limit maximum width */
+    text-align: center;
+}
+
+.name_input, .number_input, .email_input, .otp-section {
+    margin: 10px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 400px; /* Limit maximum width */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email_input, .otp-section {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.accept_statements {
+    margin: 0;
+    text-align: center;
+}
+
+.accept_statements input {
+    width: 15px; /* Increased size for better usability */
+    height: 15px; /* Increased size for better usability */
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    border-radius: 10px;
+    padding: 3px;
+    padding-left: 10px;
+    height: 25px;
+    border: none;
+    color: white;
+    background-color: #ad908f;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+
+.form_buttons, .form_submitter {
+    cursor: pointer;
+    width: 100px;
+    max-height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    font-weight: 600;
+    background-color: #1ad8bf;
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.form_buttons:hover{
+    background-color: #25D366;
+    color: #fff;
+}
+
+.form_submitter {
+    font-size: 18px; /* Adjusted for better readability on smaller screens */
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.form_submitter:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.email-error,
+.otp-error,
+.number-error{
+    font-size: 10px;
+    color: red;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .form_heading {
+        font-size: 20px; /* Slightly smaller font size on medium screens */
+    }
+
+    .statement {
+        font-size: 14px; /* Adjusted for smaller screens */
+    }
+
+    .form_buttons, .form_submitter {
+        width: 90px; /* Adjust button width */
+        height: 100%;
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .name_input, .number_input, .email_input, .otp-section {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .form_heading {
+        font-size: 18px; /* Smaller font size on small screens */
+    }
+
+    .statement {
+        font-size: 12px; /* Adjusted for very small screens */
+    }
+
+    .form_buttons, .form_submitter {
+        width: 120px; /* Adjust button width */
+        height: 100%;
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .name_input, .number_input, .email_input, .otp-section {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 5px; /* Adjust margin for very small screens */
+    }
+}
+
+
+.social-logo{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.social-logo{
+    background-color: transparent;
+}
+
+.insta,.whatsapp,.github,.linkdin,.twitter{
+    cursor: pointer ;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: transparent;
+    scale: 1;
+    transition: background-color 0.7s, scale 0.7s,color 0.7s;
+
+}
+
+.insta:hover{
+    background-color: #FD1D1D;
+    scale: 1.2;
+    color: #fff;
+}
+
+.whatsapp:hover{
+    background-color: #25D366;
+    scale: 1.2;
+    color: #fff;
+}
+
+.github:hover{
+    background-color: #5B51D8;
+    scale: 1.2;
+    color: #fff;
+}
+
+.twitter:hover{
+    background-color:#00A3EE ;
+    scale: 1.2;
+    color: #fff;
+}
+
+.linkdin:hover{
+    background-color: #405DE6;
+    scale: 1.2;
+    color: #fff;
+}

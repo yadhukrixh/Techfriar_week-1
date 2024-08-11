@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/styles/style.css" >
-        <link rel="icon" type="image/x-icon" href="./assets/photos/profile.webp">
-        <title>Projects</title>
-    </head>
-    <body class="about_body">
-        <main>
-            <nav>
-                <div class="container">
-                    <div class="logo">
-                        <a href="index.html">YadhuKrishnan</a>
-                    </div>
-                    <button class="menu-toggle" aria-label="Toggle menu">
-                        <span class="menu-icon"></span>
-                        <span class="menu-icon"></span>
-                        <span class="menu-icon"></span>
-                    </button>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="project.html" style="color: #f39c12;">Projects</a></li>
-                        <li><a href="qualification.html">Qualification</a></li>
-                        <li><a href="social.html">Socials</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/projects.css">
+    <link rel="icon" type="image/x-icon" href="./assets/photos/profile.webp">
+    <title>Projects</title>
+</head>
+<body class="projects_body">
+    <main>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">YadhuKrishnan</a>
                 </div>
-            </nav>
-            
+                <!-- Menu Toggle Button for Mobile View -->
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html" style="color: #f39c12;">Projects</a></li>
+                    <li><a href="qualification.html">Qualification</a></li>
+                    <li><a href="social.html">Socials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-            <section class="projects">
-                <div class="projects_container">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="./assets/photos/project1.webp" alt="" class="project_img">
-                                <p class="title text-stroke">Portfolio</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <p>This project is fully builded by HTML,CSS and Java script</p>
-                                <a href=""><button class="project-visit">VISIT</button></a>
-                            </div>
+        <!-- Projects Section -->
+        <section class="projects">
+            <div class="projects_container">
+                <!-- Project Card 1 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/photos/project1.webp" alt="Portfolio project" class="project_img">
+                            <p class="title text-stroke">Portfolio</p>
                         </div>
-                    </div>
-
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="./assets/photos/project2.webp" alt="" class="project_img">
-                                <p class="title text-stroke">Department Website</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <p>This project is fully builded by HTML,CSS and Java script</p>
-                                <a href=""><button class="project-visit">VISIT</button></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="./assets/photos/project3.webp" alt="" class="project_img">
-                                <p class="title text-stroke">Login & SignUP form</p>
-                            </div>
-                            <div class="flip-card-back">
-                                <p>This project is builded on MERN stack to understand the API functions.</p>
-                                <a href=""><button class="project-visit">VISIT</button></a>
-                            </div>
+                        <div class="flip-card-back">
+                            <p>This project is built using HTML, CSS, and JavaScript.</p>
+                            <a href="#"><button class="project-visit">VISIT</button></a>
                         </div>
                     </div>
                 </div>
-            </section>
 
+                <!-- Project Card 2 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/photos/project2.webp" alt="Department Website project" class="project_img">
+                            <p class="title text-stroke">Department Website</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>This project is built using HTML, CSS, and JavaScript.</p>
+                            <a href="#"><button class="project-visit">VISIT</button></a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Project Card 3 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./assets/photos/project3.webp" alt="Login & SignUp form project" class="project_img">
+                            <p class="title text-stroke">Login & SignUp Form</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>This project is built using the MERN stack to understand API functions.</p>
+                            <a href="#"><button class="project-visit">VISIT</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        </main>
-        <script src="./assets/Scripts/index.js" defer></script>
-    </body>
+    <!-- External JavaScript -->
+    <script src="./assets/Scripts/index.js" defer></script>
+</body>
 </html>

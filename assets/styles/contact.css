@@ -1,0 +1,96 @@
+/* contact page */
+.contact{
+    display:flex ;
+    height: 90dvh;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+.message-container {
+    background-color: #ffffff53;
+    backdrop-filter: blur(8px);
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: open-animation .8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.message-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.message-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+}
+
+.message-form input,
+.message-form textarea {
+    background-color: rgba(98, 118, 121, 0.575);
+    color: #000;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    cursor: auto;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.message-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.message-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .message-container {
+        padding: 15px;
+    }
+    .message-container h1 {
+        font-size: 22px;
+    }
+    .message-form input,
+    .message-form textarea {
+        padding: 8px;
+    }
+    .message-form button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .message-container {
+        padding: 10px;
+    }
+    .message-container h1 {
+        font-size: 20px;
+    }
+    .message-form input,
+    .message-form textarea {
+        padding: 6px;
+    }
+    .message-form button {
+        padding: 6px;
+    }
+}

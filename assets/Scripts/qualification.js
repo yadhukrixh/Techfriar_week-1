@@ -1,4 +1,4 @@
-// Array of course details
+// Array of institutes details
 const institutions = [
     {
         title: "G P T C Shoranur",
@@ -57,7 +57,7 @@ function hidePopup() {
 
 // Add event listeners to each hover element
 hoverElements.forEach(hoverElement => {
-    hoverElement.addEventListener('click', showPopup);
+    hoverElement.addEventListener('mouseover', showPopup);
 });
 
 overlay.addEventListener('click', hidePopup);
