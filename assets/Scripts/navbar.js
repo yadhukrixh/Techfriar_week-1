@@ -6,15 +6,3 @@ document.addEventListener('DOMContentLoaded', () => {
         navbarToggle.classList.toggle('active');
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
