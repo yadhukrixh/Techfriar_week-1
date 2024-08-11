@@ -1,6 +1,6 @@
 /*Project page*/
 .projects{
-    height: calc(100vh - 60px);
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,8 +107,8 @@
 @media (max-width : 850px) {
     .projects{
         height: 100dvh;
-        margin-top: 300px;
-        margin-bottom: 200px;
+        margin-top: 200px;
+        margin-bottom: 400px;
     }
     .projects_container{
         flex-direction: column;
