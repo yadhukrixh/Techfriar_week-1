@@ -38,7 +38,7 @@ function sendOtp() {
         }
         else{
             const errorMsg = document.createElement('div');
-            errorMsg.innerHTML = <p>Enter a valid email</p>;
+            errorMsg.innerHTML = `<p>Enter a valid email</p>`;
             emailError.innerHTML =``;
             emailError.appendChild(errorMsg);
         }
@@ -58,7 +58,7 @@ function validateOtp() {
         document.getElementById('validate-otp-btn').disabled = true;
     } else {
         const errorMsg = document.createElement('div');
-            errorMsg.innerHTML = <p>Enter a valid OTP</p>;
+            errorMsg.innerHTML = `<p>Enter a valid OTP</p>`;
             otpError.innerHTML =``;
             otpError.appendChild(errorMsg);
     }
@@ -67,7 +67,6 @@ function validateOtp() {
 function validateForm(event) {
     event.preventDefault(); // Prevent the default form submission
     const phone = document.getElementById('phone').value;
-    console.log(phone);
 
 
 
@@ -86,7 +85,7 @@ function validateForm(event) {
     }
     else{
         const errorMsg = document.createElement('div');
-            errorMsg.innerHTML = <p>Enter a valid phone number</p>;
+            errorMsg.innerHTML = `<p>Enter a valid phone number</p>`;
             numberError.innerHTML =``;
             numberError.appendChild(errorMsg);
     }
